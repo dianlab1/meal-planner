@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #f7f2ea;
+    padding: 28px 16px;
+}
+
+.container h1 {
+    font-family: 'Newsreader', serif;
+    font-size: 28px;
+    color: #2b241d;
+    margin: 0;
+}
+
+.container p {
+    font-size: 14px;
+    color: #8a7d6c;
+    margin: 4px 0 0;
+}
+
+.day-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.day-row {
+    background-color: #ffff;
+    border: 1px solid #efe6d8;
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);
+    padding: 14px 16px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.day-row:active {
+    background-color: #fbf7f0;
+}
+
+.day-name {
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    color: #2b241d;
+    width: 82px;
+    flex-shrink: 0;
+}
+
+.day-input {
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #453c33;
+    flex: 1;
+    outline: none;
+}
+
+.chevron {
+    flex-shrink: 0;
+    color: #c9a888;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #8a7d6c;
+    min-height: 44px;
+    text-decoration: none;
+}
+
+.day-heading {
+    font-family: 'Newsreader', serif;
+    font-size: 34px;
+    color: #2b241d;
+    margin: 10px 0 12px;
+}
+
+.meal-section {
+    margin-bottom: 32px;
+}
+
+.meal-label {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #b7ac9c;
+    margin-bottom: 4px;
+}
+
+.meal-input {
+    border: none;
+    border-bottom: 1.5px solid #e8ddd0;
+    background: transparent;
+    font-size: 17px;
+    padding: 10px 1px 12px;
+    color: #453c33;
+    width: 100%;
+    outline: none;
+}
+
+.placeholder-box {
+    border: 1.5px dashed #e0d5c4;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    color: #b7ac9c;
+    font-size: 13.5px;
+}
