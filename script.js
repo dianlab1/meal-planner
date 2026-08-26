@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll('.day-input');
+const clear = document.querySelector('#clear-btn');
 
 let meals = {};
 
@@ -41,3 +42,17 @@ if ('serviceWorker' in navigator) {
       .catch(() => console.log('Service Worker registration failed'));
   });
 }
+
+clear.addEventListener("click", () => {
+  const sure = confirm("Reset everything for a new round?");
+
+  if (sure) {
+    meals = {};
+    localStorage.removeItem("meals");
+    localStorage.removeItem("recipeLinks");
+
+    inputs.forEach((box) => {
+      box.value = "";
+    });
+  }
+});

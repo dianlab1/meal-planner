@@ -3,6 +3,7 @@ const day = params.get("day");
 
 const heading = document.getElementById("day-heading");
 const mealInput = document.getElementById("meal-input");
+const linkInput = document.getElementById("link-input");
 
 const dayCapitalized = day.charAt(0).toUpperCase() + day.slice(1);
 heading.textContent = dayCapitalized;
@@ -28,3 +29,17 @@ if ('serviceWorker' in navigator) {
       .catch(() => console.log('Service Worker registration failed'));
   });
 }
+
+let recipeLinks = {};
+
+const savedLink = localStorage.getItem("recipeLinks");
+if (savedLink) {
+  recipeLinks = JSON.parse(savedLink);
+}
+
+linkInput.value = recipeLinks[day] || "";
+
+linkInput.addEventListener("input", () => {
+  recipeLinks[day] = linkInput.value;
+  localStorage.setItem("recipeLinks", JSON.stringify(recipeLinks));
+})

@@ -104,11 +104,52 @@ body {
     outline: none;
 }
 
-.placeholder-box {
+#clear-btn {
+    font-family: 'Newsreader', serif;
+    font-size: 12px;
+    color: #2b241d;
+    width: 100px;
+    flex-shrink: 0;
+    background-color: #ffff;
+    border: 1px solid #efe6d8;
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);
+    padding: 14px 16px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-link {
     border: 1.5px dashed #e0d5c4;
     border-radius: 14px;
     padding: 22px;
     text-align: center;
     color: #b7ac9c;
     font-size: 13.5px;
+}
+
+#recipe-heading {
+    font-family: 'Newsreader', serif;
+    font-size: 34px;
+    color: #2b241d;
+    margin: 10px 0 12px;
+}
+
+#link-input {
+    border: none;
+    border-bottom: 1.5px solid #e8ddd0;
+    background: transparent;
+    font-size: 17px;
+    padding: 10px 1px 12px;
+    color: #453c33;
+    width: 100%;
+    outline: none;
 }
