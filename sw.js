@@ -1,4 +1,6 @@
-const CACHE_NAME = "meal-planner-cache-v1.1";
+const CACHE_NAME = "meal-planner-cache-v1.2";
+
+self.skipWaiting();
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -14,5 +16,11 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request, { ignoreSearch: true }).then((response) => {
         return response || fetch(event.request);
     })
+  );
+});
+
+self.addEventListener("eventName", (event) => {
+  event.waitUntil(
+    somePromise
   );
 });
