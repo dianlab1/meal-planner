@@ -1,13 +1,17 @@
-const CACHE_NAME = "meal-planner-cache-v1.2";
-
-self.skipWaiting();
+const CACHE_NAME = "meal-planner-cache-v1.3";
 
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(["index.html", "day.html", "style.css", "script.js","day.js", "manifest.json", "icon-192.png", "icon-512.png"]);
+      return cache.addAll(["index.html", "day.html", "style.css", "script.js", "day.js", "manifest.json", "icon-192.png", "icon-512.png"]);
     })
-    
+  );
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    self.clients.claim()
   );
 });
 
@@ -16,11 +20,5 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request, { ignoreSearch: true }).then((response) => {
         return response || fetch(event.request);
     })
-  );
-});
-
-self.addEventListener("eventName", (event) => {
-  event.waitUntil(
-    somePromise
   );
 });
