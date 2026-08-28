@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinnerPlanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#b5602f">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="icon" href="icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+    <a href="index.html" class="back-link">‹ This Week</a>
+    <h1 id="day-heading" class="day-heading"></h1>
+    <div class="meal-section">
+       <div class="meal-label">Meal</div> 
+       <input id="meal-input" class="meal-input" placeholder="Add a meal...">
+    </div>
+    <div class="recipe-link">
+        <h1 id="recipe-heading">Recipe Link</h1>
+        <input type="text" id="link-input" placeholder="Paste Link...">
+        <button id="get-details">Fetch</button>
+    </div>
+    <div class ="details">  
+        <div id="recipeResult"> </div>
+    </div>
+    
+    <script src="day.js"></script> 
+</body>
+</html>

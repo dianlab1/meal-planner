@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinnerPlanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#b5602f">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="icon" href="icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="left-thing">
+                <h1>Dinner Planner</h1>
+                <p>Plan your dinners for the week!</p> 
+            </div>
+            <div class="right-thing">
+                <button id="clear-btn">Next Week</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-list">
+        <div class="day-row" data-day="monday">
+            <div class="day-name">Monday</div>
+            <input class="day-input" data-day="monday" placeholder="Add a meal...">  
+            <span class="chevron">›</span> 
+        </div>
+        <div class="day-row" data-day="tuesday">
+            <div class="day-name">Tuesday</div>
+            <input class="day-input" data-day="tuesday" placeholder="Add a meal...">
+            <span class="chevron">›</span>
+        </div>
+        <div class="day-row" data-day="wednesday">
+            <div class="day-name">Wednesday</div>
+            <input class="day-input" data-day="wednesday" placeholder="Add a meal...">
+            <span class="chevron">›</span>
+        </div>
+        <div class="day-row" data-day="thursday">
+            <div class="day-name">Thursday</div>
+            <input class="day-input" data-day="thursday" placeholder="Add a meal...">
+            <span class="chevron">›</span>
+        </div>
+        <div class="day-row" data-day="friday">
+            <div class="day-name">Friday</div>
+            <input class="day-input" data-day="friday" placeholder="Add a meal...">
+            <span class="chevron">›</span>
+        </div>
+        <div class="day-row" data-day="saturday">
+            <div class="day-name">Saturday</div>
+            <input class="day-input" data-day="saturday" placeholder="Add a meal...">
+            <span class="chevron">›</span>
+        </div>
+        <div class="day-row" data-day="sunday">
+            <div class="day-name">Sunday</div>
+            <input class="day-input" data-day="sunday" placeholder="Add a meal...">
+            <span class="chevron">›</span>
+        </div>
+    </div>
+
+<script src="script.js"></script>    
+
+</body>
+
+</html>
