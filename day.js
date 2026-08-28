@@ -48,7 +48,7 @@ linkInput.addEventListener("input", () => {
 let recipeFetch = {};
 
 getRecipe.addEventListener("click", () => {
-  const serverUrl = "http://192.168.18.101:3000/api/recipe?url=" + encodeURIComponent(linkInput.value);
+  const serverUrl = "https://dinnerplanner-server.onrender.com/api/recipe?url=" + encodeURIComponent(linkInput.value);
 
   fetch(serverUrl)
     .then(response => response.json())
