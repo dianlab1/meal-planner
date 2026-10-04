@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../DinnerPlanner-Server"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DinnerPlanner"
+	}
+}
